@@ -391,4 +391,107 @@ footer .cards-footer img{
         grid-template-columns: 25% 25% 25%;
         grid-template-rows: 70%;
     }
+
+    .contact-us .grid .column h3,
+    .contact-us .grid .column p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 544px){
+    header h2{
+        font-size: 40px;
+    }
+
+    .menu-hamburguer{
+        display: flex !important;
+        margin: 10;
+        font-size: 1.5rem;
+    }
+
+    header nav ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 25rem;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(6px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-150%);
+        transition: all 0.6s ease;
+    }
+
+    #check:checked ~ ul{
+        transform: translate(0%);
+    }
+
+    .home{
+        grid-template-columns: 50% auto auto;
+    }
+
+    .home .column-text h2{
+        font-size: 24px;
+    }
+
+    .home .column-text p{
+        font-size: 16px;
+    }
+
+    .home .column-text a{
+        padding: 20;
+        font-size: 14px;
+    }
+
+    .coffe-menu .text,
+    .tea-menu .text{
+        font-size: 40px;
+    }
+
+    .coffe-menu .grid,
+    .tea-menu .grid{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 15% 15% 15% 15% 15%;
+    }
+
+    .coffe-menu .grid .column h3,
+    .tea-menu .grid .column h3{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .coffe-menu .grid .column h4,
+    .tea-menu .grid .column h4{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .coffe-menu .grid .column h3,
+    .tea-menu .grid .column h3,
+    .coffe-menu .grid .column h4,
+    .tea-menu .grid .column h4{
+        margin: 5;     
+    }
+
+    .contact-us .column-text{
+        font-size: 40px;
+    }
+
+    .contact-us .grid{
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 55%;
+        gap: 10px;
+    }
+
+    .contact-us .grid .column h3,
+    .contact-us .grid .column p{
+        font-size: 15px;
+    }
+
+    footer .nav-footer a{
+        font-size: 12px;
+        text-align: center;
+    }
 }
